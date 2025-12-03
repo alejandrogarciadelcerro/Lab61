@@ -25,10 +25,26 @@ public class TransportationOrder {
 
     private int st;
 
-    public TransportationOrder() {
+    public TransportationOrder(String toid, String truck,
+            long originDate, double originLat, double originLong,
+            long dstDate, double dstLat, double dstLong,
+            long lastDate, double lastLat, double lastLong,
+            int st) {
+        this.toid = toid;
+        this.truck = truck;
+        this.originDate = originDate;
+        this.originLat = originLat;
+        this.originLong = originLong;
+        this.dstDate = dstDate;
+        this.dstLat = dstLat;
+        this.dstLong = dstLong;
+        this.lastDate = lastDate;
+        this.lastLat = lastLat;
+        this.lastLong = lastLong;
+        this.st = st;
     }
 
-    // GETTERS Y SETTERS
+// GETTERS Y SETTERS
     public String getToid() {
         return toid;
     }
