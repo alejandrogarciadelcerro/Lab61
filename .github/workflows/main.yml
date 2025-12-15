@@ -17,7 +17,7 @@ jobs:
 
     - name: Build project with Maven
       working-directory: TransportationOrderServer0-main
-      run: mvn -B compile --file TransportationOrderServer/pom.xml
+      run: mvn -B compile --file TransportationOrderServer0-main/pom.xml
 
   verify-and-package:
 
@@ -41,7 +41,7 @@ jobs:
 
     - name: Run all defined tests and generate war with Maven
 
-      run: mvn -B verify --file TransportationOrderServer/pom.xml
+      run: mvn -B verify --file TransportationOrderServer0-main/pom.xml
 
     -
 
