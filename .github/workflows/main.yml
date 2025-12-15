@@ -41,7 +41,7 @@ jobs:
 
     - name: Run all defined tests and generate war with Maven
 
-      run: mvn -B verify --file pom.xml
+      run: mvn -B verify --file TransportationOrderServer0-main/pom.xml
 
     -
 
@@ -65,7 +65,7 @@ jobs:
 
         with:
 
-          context: .
+          context: ./TransportationOrderServer0-main
 
           push: true
 
